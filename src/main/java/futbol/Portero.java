@@ -12,9 +12,9 @@ public class Portero extends Futbolista {
 	
 	public String toString() {
 		return "El futbolista " + super.getNombre() +
-				" tiene " + super.getEdad() + " y juega de " +
+				" tiene " + super.getEdad() + ", y juega de " +
 				super.getPosicion() + " con el dorsal " + dorsal +
-				" le han marcado " + golesRecibidos;
+				". Le han marcado " + golesRecibidos;
 	}
 
 	public int compareTo(Portero portero) {
