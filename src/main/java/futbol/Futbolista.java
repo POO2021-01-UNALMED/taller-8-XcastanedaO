@@ -8,10 +8,13 @@ public class Futbolista implements Comparable<Object>{
 	private final String posicion;
 	
 	public int compareTo(Object o) {
-		return this.compareTo(o);
+		int d= 1;
+		if(this.equals(o)) {
+			d=0;
+		}
+		return d;
 	}
 	
-		
 	public Futbolista(String nombre,int edad,String posicion){
 		this.nombre = nombre;
 		this.edad = edad;
@@ -30,7 +33,7 @@ public class Futbolista implements Comparable<Object>{
 
 	public boolean equals(Futbolista f) {
 		boolean afirmacion = false;
-		if(this.compareTo(f) == -1) {
+		if(this.compareTo(f) == 0) {
 			afirmacion = true;
 		}
 		return afirmacion;
@@ -59,6 +62,6 @@ public class Futbolista implements Comparable<Object>{
 	public String getPosicion() {
 		return posicion;
 	}
-	
+
 	
 }
