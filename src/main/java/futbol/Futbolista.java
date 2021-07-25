@@ -30,7 +30,7 @@ public class Futbolista implements Comparable<Object>{
 
 	public boolean equals(Futbolista f) {
 		boolean afirmacion = false;
-		if(this.compareTo(f) == 0) {
+		if(this.equals(f)) {
 			afirmacion = true;
 		}
 		return afirmacion;
