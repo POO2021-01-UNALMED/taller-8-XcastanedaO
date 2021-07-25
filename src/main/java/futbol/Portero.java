@@ -18,7 +18,7 @@ public class Portero extends Futbolista {
 	}
 
 	public int compareTo(Portero portero) {
-		return this.golesRecibidos - portero.golesRecibidos;
+		return this.compareTo(portero);
 	}
 	
 	public boolean jugarConLasManos() {
