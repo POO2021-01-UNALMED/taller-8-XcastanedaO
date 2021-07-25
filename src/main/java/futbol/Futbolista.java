@@ -29,11 +29,14 @@ public class Futbolista implements Comparable<Object>{
 	}
 
 	public boolean equals(Futbolista f) {
-		boolean afirmacion = false;
+		return this.equals(f);
+		
+		
+		/*boolean afirmacion = true;
 		if(this.equals(f)) {
 			afirmacion = true;
 		}
-		return afirmacion;
+		return afirmacion;*/
 	}
 	
 	public  boolean jugarConLasManos() {
