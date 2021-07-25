@@ -11,14 +11,15 @@ public abstract class Futbolista implements Comparable<Object>{
 		return this.compareTo(o);
 	}
 	
-	public Futbolista(){
-		this("Maradona",30, "delantero");
-	}
-	
+		
 	public Futbolista(String nombre,int edad,String posicion){
 		this.nombre = nombre;
 		this.edad = edad;
 		this.posicion = posicion;
+	}
+	
+	public Futbolista(){
+		this("Maradona",30, "delantero");
 	}
 	
 	public String toString() {
