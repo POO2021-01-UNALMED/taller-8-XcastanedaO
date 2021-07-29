@@ -15,6 +15,14 @@ public class Futbolista implements Comparable<Object>{
 		return d;
 	}
 	
+	/*public boolean equals(Futbolista f) {
+		boolean afirmacion = false;
+		if(this.compareTo(f) == 0) {
+			afirmacion = true;
+		}
+		return afirmacion;
+	}*/
+	
 	public Futbolista(String nombre,int edad,String posicion){
 		this.nombre = nombre;
 		this.edad = edad;
@@ -29,14 +37,6 @@ public class Futbolista implements Comparable<Object>{
 		return "El futbolista " + nombre +
 				" tiene " + edad + ", y juega de " +
 				posicion;
-	}
-
-	public boolean equals(Futbolista f) {
-		boolean afirmacion = false;
-		if(this.compareTo(f) == 0) {
-			afirmacion = true;
-		}
-		return afirmacion;
 	}
 	
 	public  boolean jugarConLasManos() {
