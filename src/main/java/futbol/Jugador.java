@@ -25,9 +25,9 @@ public class Jugador extends Futbolista{
 		return valor;
 	}
 	
-	public int compareTo(Futbolista futbolista) {
+	/*public int compareTo(Futbolista futbolista) {
 		return this.getEdad() - futbolista.getEdad();
-	}
+	}*/
 	
 	public String toString() {
 		return "El futbolista " + super.getNombre() +

@@ -8,11 +8,11 @@ public class Futbolista implements Comparable<Object>{
 	private final String posicion;
 	
 	public int compareTo(Object o) {
-		int d= 1;
+		/*int d= 1;
 		if(this.equals(o)) {
 			d=0;
-		}
-		return d;
+		}*/
+		return 0;
 	}
 	
 	/*public boolean equals(Futbolista f) {
